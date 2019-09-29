@@ -10,7 +10,18 @@ namespace PW10
     {
         static void Main(string[] args)
         {
+            Student student = new Student
+            {
+                Name = "Томас",
+                FullName = "Шелби",
+                Grades = new int[] {5,3,5,5}
+            };
+            Console.WriteLine(student.Grades[2]);
+            Console.WriteLine(student.Name);
+            Console.WriteLine(student.FullName);
+            Console.WriteLine(student.GetAvgGrade());
 
+            Console.ReadKey();
         }
     }
 }
